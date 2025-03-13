@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=title%></title>
-  </head>
-  <body>
+</head>
+<body>
     <h1>Image Download Page</h1>
     <nav>
-      <a href="/">Home</a>
-      <a href="/about">About us</a>
-      <a href="/image">Download Image</a>
-      <a href="/greet/user">Greet User</a>
+        <a href="/">Home Page</a>
+        <a href="/greet/User">Greet</a>
+        <a href="/about">About</a>
+        <a href="/image">Download Image</a>
     </nav>
 
-
-    <form action="/download-image" method="POST">
+    <form action="/image/download-image" method="POST">
+        <input type="hidden" name="image" value="img-dari.jpg">
         <button type="submit">Download the image</button>
     </form>
-  </body>
+</body>
 </html>
